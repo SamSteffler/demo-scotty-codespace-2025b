@@ -19,6 +19,7 @@ advices =
 
 -- Function to get a random advice
 -- Using "do" to execute actions step by step, like in "imperative" programming
+-- website: http://localhost:3000/advice
 getRandomAdvice :: IO Text
 getRandomAdvice = do
     index <- randomRIO (0, length advices - 1)
